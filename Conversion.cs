@@ -1,5 +1,9 @@
 ﻿using System;
-
+/*
+ * This is the conversion class
+ * It has methods only that convert the user values into the appropriate temperature values
+ * 
+ */
 namespace Assignment02 {
     public class Conversion {
 

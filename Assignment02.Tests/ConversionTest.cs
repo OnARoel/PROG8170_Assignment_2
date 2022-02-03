@@ -5,19 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment02.Tests
-{
-    public class ConversionTest
-    {
+/*
+ * This is the testing class
+ * It tests each method to make sure the inputs and accepted outputs are validated
+ */
+
+namespace Assignment02.Tests {
+    public class ConversionTest {
 
         [Test]
-        public void ConvertCelciusToFahrenheit_WhenInputIs0_Returns32()
-        {
+        public void ConvertCelciusToFahrenheit_WhenInputIs0_Returns32() {
             //Arrange
             int convertedValue = 0;
             double expected = 32;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertCelciusToFahrenheit();
 
@@ -26,13 +27,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertCelciusToFahrenheit_WhenInputIs1_Returns33dot8()
-        {
+        public void ConvertCelciusToFahrenheit_WhenInputIs1_Returns33dot8() {
             //Arrange
             int convertedValue = 1;
             double expected = 33.8;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertCelciusToFahrenheit();
 
@@ -41,13 +40,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertCelciusToFahrenheit_WhenInputIsMinus1_Returns30dot2()
-        {
+        public void ConvertCelciusToFahrenheit_WhenInputIsMinus1_Returns30dot2() {
             //Arrange
             int convertedValue = -1;
             double expected = 30.2;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertCelciusToFahrenheit();
 
@@ -56,13 +53,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertCelciusToKelvin_WhenInputIs0_Returns273dot15()
-        {
+        public void ConvertCelciusToKelvin_WhenInputIs0_Returns273dot15() {
             //Arrange
             int convertedValue = 0;
             double expected = 273.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertCelciusToKelvin();
 
@@ -71,13 +66,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertCelciusToKelvin_WhenInputIs1_Returns274dot15()
-        {
+        public void ConvertCelciusToKelvin_WhenInputIs1_Returns274dot15() {
             //Arrange
             int convertedValue = 1;
             double expected = 274.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertCelciusToKelvin();
 
@@ -86,13 +79,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertCelciusToKelvin_WhenInputIsMinus1_Returns272dot15()
-        {
+        public void ConvertCelciusToKelvin_WhenInputIsMinus1_Returns272dot15() {
             //Arrange
             int convertedValue = -1;
             double expected = 272.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertCelciusToKelvin();
 
@@ -101,13 +92,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertFahrenheitToCelsius_WhenInputIs0_ReturnsMinus17dot78()
-        {
+        public void ConvertFahrenheitToCelsius_WhenInputIs0_ReturnsMinus17dot78() {
             //Arrange
             int convertedValue = 0;
             double expected = -17.78;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertFahrenheitToCelsius();
 
@@ -116,13 +105,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertFahrenheitToCelsius_WhenInputIs1_ReturnsMinus17dot22()
-        {
+        public void ConvertFahrenheitToCelsius_WhenInputIs1_ReturnsMinus17dot22() {
             //Arrange
             int convertedValue = 1;
             double expected = -17.22;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertFahrenheitToCelsius();
 
@@ -131,13 +118,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertFahrenheitToCelsius_WhenInputIsMinus1_ReturnsMinus18dot33()
-        {
+        public void ConvertFahrenheitToCelsius_WhenInputIsMinus1_ReturnsMinus18dot33() {
             //Arrange
             int convertedValue = -1;
             double expected = -18.33;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertFahrenheitToCelsius();
 
@@ -146,13 +131,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertFahrenheitToKelvin_WhenInputIs0_Returns256dot15()
-        {
+        public void ConvertFahrenheitToKelvin_WhenInputIs0_Returns256dot15() {
             //Arrange
             int convertedValue = 0;
             double expected = 256.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertFahrenheitToKelvin();
 
@@ -161,13 +144,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertFahrenheitToKelvin_WhenInputIs1_Returns256dot15()
-        {
+        public void ConvertFahrenheitToKelvin_WhenInputIs1_Returns256dot15() {
             //Arrange
             int convertedValue = 1;
             double expected = 256.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertFahrenheitToKelvin();
 
@@ -176,13 +157,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertFahrenheitToKelvin_WhenInputIsMinus1_Returns255dot15()
-        {
+        public void ConvertFahrenheitToKelvin_WhenInputIsMinus1_Returns255dot15() {
             //Arrange
             int convertedValue = -1;
             double expected = 255.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertFahrenheitToKelvin();
 
@@ -191,13 +170,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertKelvinToCelsius_WhenInputIs0_ReturnsMinus273dot15()
-        {
+        public void ConvertKelvinToCelsius_WhenInputIs0_ReturnsMinus273dot15() {
             //Arrange
             int convertedValue = 0;
             double expected = -273.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertKelvinToCelsius();
 
@@ -206,13 +183,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertKelvinToCelsius_WhenInputIs1_ReturnsMinus272dot15()
-        {
+        public void ConvertKelvinToCelsius_WhenInputIs1_ReturnsMinus272dot15() {
             //Arrange
             int convertedValue = 1;
             double expected = -272.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertKelvinToCelsius();
 
@@ -221,13 +196,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertKelvinToCelsius_WhenInputIsMinus1_ReturnsMinus274dot15()
-        {
+        public void ConvertKelvinToCelsius_WhenInputIsMinus1_ReturnsMinus274dot15() {
             //Arrange
             int convertedValue = -1;
             double expected = -274.15;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertKelvinToCelsius();
 
@@ -236,13 +209,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertKelvinToFahrenheit_WhenInputIs0_ReturnsMinus459dot67()
-        {
+        public void ConvertKelvinToFahrenheit_WhenInputIs0_ReturnsMinus459dot67() {
             //Arrange
             int convertedValue = 0;
             double expected = -459.67;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertKelvinToFahrenheit();
 
@@ -251,13 +222,11 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertKelvinToFahrenheit_WhenInputIs1_ReturnsMinus457dot87()
-        {
+        public void ConvertKelvinToFahrenheit_WhenInputIs1_ReturnsMinus457dot87() {
             //Arrange
             int convertedValue = 1;
             double expected = -457.87;
 
-
             //Act
             double actual = (new Conversion(convertedValue)).ConvertKelvinToFahrenheit();
 
@@ -266,12 +235,10 @@ namespace Assignment02.Tests
         }
 
         [Test]
-        public void ConvertKelvinToFahrenheit_WhenInputIsMinus1_ReturnsMinus461dot47()
-        {
+        public void ConvertKelvinToFahrenheit_WhenInputIsMinus1_ReturnsMinus461dot47() {
             //Arrange
             int convertedValue = -1;
             double expected = -461.47;
-
 
             //Act
             double actual = (new Conversion(convertedValue)).ConvertKelvinToFahrenheit();

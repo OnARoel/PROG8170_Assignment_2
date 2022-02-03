@@ -84,7 +84,7 @@ namespace Assignment2 {
                         break;
                     default:
                         if (userChoice < 0) Console.WriteLine("\n\nPlease enter a number greater than 0!\n\n");
-                        else Console.WriteLine("\n\nPlease enter a valid value!\n\n");
+                        else Console.WriteLine("\n\nPlease enter a valid value between 1 and 7!\n\n");
                         break;
                 }
 

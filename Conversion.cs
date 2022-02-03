@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace A2 {
+namespace Assignment02 {
     public class Conversion {
 
         private int convertedValue;

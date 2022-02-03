@@ -1,4 +1,4 @@
-﻿using A2;
+﻿using Assignment02;
 using System;
 
 namespace Assignment2 {

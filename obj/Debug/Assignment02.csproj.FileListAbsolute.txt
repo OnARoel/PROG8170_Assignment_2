@@ -1,0 +1,6 @@
+C:\Users\roela\Desktop\Assignment02\bin\Debug\Assignment02.exe
+C:\Users\roela\Desktop\Assignment02\bin\Debug\Assignment02.pdb
+C:\Users\roela\Desktop\Assignment02\obj\Debug\Assignment02.csproj.AssemblyReference.cache
+C:\Users\roela\Desktop\Assignment02\obj\Debug\Assignment02.csproj.CoreCompileInputs.cache
+C:\Users\roela\Desktop\Assignment02\obj\Debug\Assignment02.exe
+C:\Users\roela\Desktop\Assignment02\obj\Debug\Assignment02.pdb

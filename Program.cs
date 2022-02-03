@@ -7,7 +7,7 @@ namespace Assignment2 {
 
             int userChoice = 0;
             while (userChoice != 7) {
-                printMenu();
+                PrintMenu();
                 userChoice = Int32.Parse(Console.ReadLine());
                 Conversion c;
 
@@ -17,7 +17,7 @@ namespace Assignment2 {
                         Console.WriteLine("You have chosen to convert Celsius to Fahrenheit");
                         Console.WriteLine("Please enter your Celsius value");
                         tempInput = Int32.Parse(Console.ReadLine());
-                        tempInput = checkTemp(tempInput);
+                        tempInput = CheckTemp(tempInput);
                         
                         c = new Conversion(tempInput);
                         Console.WriteLine("\nYou have converted " + tempInput + " from Celsius to Fahrenheit");
@@ -29,7 +29,7 @@ namespace Assignment2 {
                         Console.WriteLine("You have chosen to convert Celsius to Kelvin");
                         Console.WriteLine("Please enter your Celsius value");
                         tempInput = Int32.Parse(Console.ReadLine());
-                        tempInput = checkTemp(tempInput);
+                        tempInput = CheckTemp(tempInput);
                         c = new Conversion(tempInput);
 
                         Console.WriteLine("\nYou have converted " + tempInput + " from Celsius to Kelvin");
@@ -41,7 +41,7 @@ namespace Assignment2 {
                         Console.WriteLine("You have chosen to convert Fahrenheit to Celsius");
                         Console.WriteLine("Please enter your Fahrenheit value");
                         tempInput = Int32.Parse(Console.ReadLine());
-                        tempInput = checkTemp(tempInput);
+                        tempInput = CheckTemp(tempInput);
                         c = new Conversion(tempInput);
 
                         Console.WriteLine("\nYou have converted " + tempInput + " from Fahrenheit to Celsius");
@@ -53,7 +53,7 @@ namespace Assignment2 {
                         Console.WriteLine("You have chosen to convert Fahrenheit to Kelvin");
                         Console.WriteLine("Please enter your Fahrenheit value");
                         tempInput = Int32.Parse(Console.ReadLine());
-                        tempInput = checkTemp(tempInput);
+                        tempInput = CheckTemp(tempInput);
                         c = new Conversion(tempInput);
 
                         Console.WriteLine("\nYou have converted " + tempInput + " from Fahrenheit to Kelvin");
@@ -65,7 +65,7 @@ namespace Assignment2 {
                         Console.WriteLine("You have chosen to convert Kelvin to Celsius");
                         Console.WriteLine("Please enter your Kelvin value");
                         tempInput = Int32.Parse(Console.ReadLine());
-                        tempInput = checkTemp(tempInput);
+                        tempInput = CheckTemp(tempInput);
                         c = new Conversion(tempInput);
 
                         Console.WriteLine("\nYou have converted " + tempInput + " from Kelvin to Celsius");
@@ -77,7 +77,7 @@ namespace Assignment2 {
                         Console.WriteLine("You have chosen to convert Kelvin to Fahrenheit");
                         Console.WriteLine("Please enter your Kelvin value");
                         tempInput = Int32.Parse(Console.ReadLine());
-                        tempInput = checkTemp(tempInput);
+                        tempInput = CheckTemp(tempInput);
                         c = new Conversion(tempInput);
 
                         Console.WriteLine("\nYou have converted " + tempInput + " from Kelvin to Fahrenheit");
@@ -98,7 +98,7 @@ namespace Assignment2 {
 
         }
 
-        public static void printMenu() {
+        public static void PrintMenu() {
             Console.WriteLine("Welcome to the temperature conversion program!\nPlease note, all answers will be rounded!\n\n");
             Console.WriteLine("1. Convert Celsius to Fahrenheit");
             Console.WriteLine("2. Convert Celsius to Kelvin");
@@ -109,7 +109,7 @@ namespace Assignment2 {
             Console.WriteLine("7. Exit");
         }
 
-        public static int checkTemp(int tempInput) {
+        public static int CheckTemp(int tempInput) {
             while (tempInput <= 0) {
                 Console.WriteLine("Please enter a valid Temperature value above 0");
                 tempInput = Int32.Parse(Console.ReadLine());
